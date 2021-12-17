@@ -1,12 +1,23 @@
 @extends('layouts.front')
 @section('content')
-<section class="appie-hero-area appie-hero-7-area" style="background-image:url('{{asset($gs->d1)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; height: 100vh">
+<section class="appie-hero-area appie-hero-7-area desktopview" style="">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-7">
+            <div class="col-lg-2">
 
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-8 mar">
+                <div class="appie-hero-content appie-hero-content-6 appie-hero-content-7">
+                    <ul>
+                        <li><a href="{{$gs->d6}}"><i class="fab fa-apple"></i> <span>Bientôt disponible sur <span>App Store</span></span></a></li>
+                        <li><a class="item-2" href="{{$gs->d5}}"><i class="fab fa-google-play"></i> <span>Disponible sur <span>Google Play</span></span></a></li>
+                    </ul>
+                    <div class="info">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
 
             </div>
         </div>

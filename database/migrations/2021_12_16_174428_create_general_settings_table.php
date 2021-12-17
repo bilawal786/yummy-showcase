@@ -40,6 +40,9 @@ class CreateGeneralSettingsTable extends Migration
             $table->longText('d6')->nullable();
             $table->longText('d7')->nullable();
             $table->longText('d8')->nullable();
+            $table->longText('d9')->nullable();
+            $table->longText('d10')->nullable();
+            $table->longText('d11')->nullable();
 
             $table->string('video')->nullable();
             $table->string('vimage')->nullable();

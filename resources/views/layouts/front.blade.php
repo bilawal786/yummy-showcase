@@ -43,6 +43,20 @@ $gs = \App\GeneralSettings::find(1);
             min-width: 250px;
             max-width: 200px;
         }
+        .desktopview{
+            background-image:url('{{asset($gs->d1)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; height: 100vh
+        }
+        .mar{
+            margin-top: 100px
+        }
+        @media only screen and (max-width: 600px) {
+            .desktopview{
+                background-image:url('{{asset($gs->d4)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; height: 100vh
+            }
+            .mar{
+                margin-top: 150px
+            }
+        }
     </style>
 
 </head>
@@ -77,22 +91,26 @@ $gs = \App\GeneralSettings::find(1);
                         <img src="{{asset($gs->logo)}}" alt="">
                     </div>
                     <div id="menu" class="text-left ">
-                        <ul class="offcanvas_main_menu">
+
+                        <ul  class="offcanvas_main_menu">
                             <li class="menu-item-has-children active">
-                                <a href="index.html">Particulier</a>
+                                <a href="{{route('front.index')}}">Particulier</a>
                             </li>
                             <li class="menu-item-has-children active">
-                                <a href="commercant.html">Commerçant</a>
+                                <a href="{{route('front.comm')}}">Commerçants</a>
                             </li>
                             <li class="menu-item-has-children active">
-                                <a href="#testimonial">Mouvement</a>
+                                <a href="{{route('front.advantage')}}">Avantage</a>
                             </li>
                             <li class="menu-item-has-children active">
-                                <a href="contact.html">Blog</a>
+                                <a href="#">Mouvement</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{route('front.blog')}}">Blogs</a></li>
+                                    <li><a href="{{route('front.ambition')}}">Nos ambitions</a></li>
+                                    <li><a href="{{route('front.objective')}}">Nos objectifs </a></li>
+                                </ul>
                             </li>
-                            <li class="menu-item-has-children active">
-                                <a href="contact.html">Contact</a>
-                            </li>
+                            <li class="menu-item-has-children active"><a href="{{route('front.contact')}}">Contact</a></li>
                         </ul>
                     </div>
                     <div class="offcanvas-social">

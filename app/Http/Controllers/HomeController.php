@@ -70,12 +70,21 @@ class HomeController extends Controller
     public function homeStore(Request $request){
         $gs = GeneralSettings::find(1);
         $gs->video = $request->video;
+        $gs->d5 = $request->d5;
+        $gs->d6 = $request->d6;
         if ($request->hasfile('d1')) {
             $image1 = $request->file('d1');
             $name = time() . 'allimages' . '.' . $image1->getClientOriginalExtension();
             $destinationPath = 'allimages/';
             $image1->move($destinationPath, $name);
             $gs->d1 = 'allimages/' . $name;
+        }
+        if ($request->hasfile('d4')) {
+            $image2 = $request->file('d4');
+            $name2 = time() . 'allimages' . '.' . $image2->getClientOriginalExtension();
+            $destinationPath = 'allimages/';
+            $image2->move($destinationPath, $name2);
+            $gs->d4 = 'allimages/' . $name2;
         }
         $gs->update();
         $notification = array(

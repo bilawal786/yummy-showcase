@@ -48,6 +48,24 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
+                                        <label for="">Image d'en-tête mobile</label>
+                                        <input type="file" name="d4" accept="image/*" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Lien du bouton Play Store</label>
+                                        <input type="text" name="d5" value="{{$gs->d5}}" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Lien du bouton Apple Store</label>
+                                        <input type="text" name="d6" value="{{$gs->d6}}" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
                                         <label for="">Video</label>
                                         <input type="text" name="video" value="{{$gs->video}}" class="form-control">
                                     </div>
