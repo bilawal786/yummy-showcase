@@ -49,6 +49,9 @@ $gs = \App\GeneralSettings::find(1);
         .mar{
             margin-top: 100px
         }
+        .appie-hero-area {
+            padding-top: 90px;
+        }
         @media only screen and (max-width: 600px) {
             .desktopview{
                 background-image:url('{{asset($gs->d4)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; height: 100vh; margin-top: 80px;

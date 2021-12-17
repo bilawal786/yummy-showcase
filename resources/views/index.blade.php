@@ -1,6 +1,25 @@
 @extends('layouts.front')
 @section('content')
-<section class="appie-hero-area appie-hero-7-area desktopview" style="">
+<section class="appie-hero-area appie-hero-7-area desktopview">
+    <div class="row" style="background-color: black; ">
+        <div class="col-md-4" style="margin-top: 10px !important;">
+            <h2 style="color: white">YUMMY BOX</h2>
+        </div>
+        <div class="col-md-4" style="margin-top: 10px !important;">
+                <h2 style="color: white">TELECHARGEZ MAINTENANT</h2>
+        </div>
+        <div class="col-md-4">
+            <div class="appie-hero-content appie-hero-content-6 appie-hero-content-7" >
+                <ul style="margin-top: 5px !important;">
+                    <li><a href="{{$gs->d6}}"><i class="fab fa-apple"></i> <span>Bientôt disponible sur <span>App Store</span></span></a></li>
+                    <li><a class="item-2" href="{{$gs->d5}}"><i class="fab fa-google-play"></i> <span>Disponible sur <span>Google Play</span></span></a></li>
+                </ul>
+                <div class="info">
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-2">
@@ -8,13 +27,13 @@
             </div>
             <div class="col-lg-8 mar">
                 <div class="appie-hero-content appie-hero-content-6 appie-hero-content-7">
-                    <ul>
+<!--                    <ul>
                         <li><a href="{{$gs->d6}}"><i class="fab fa-apple"></i> <span>Bientôt disponible sur <span>App Store</span></span></a></li>
                         <li><a class="item-2" href="{{$gs->d5}}"><i class="fab fa-google-play"></i> <span>Disponible sur <span>Google Play</span></span></a></li>
                     </ul>
                     <div class="info">
 
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div class="col-lg-2">
