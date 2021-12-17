@@ -51,7 +51,7 @@ $gs = \App\GeneralSettings::find(1);
         }
         @media only screen and (max-width: 600px) {
             .desktopview{
-                background-image:url('{{asset($gs->d4)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; height: 100vh
+                background-image:url('{{asset($gs->d4)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; height: 100vh; margin-top: 80px;
             }
             .mar{
                 margin-top: 150px
@@ -167,7 +167,7 @@ $gs = \App\GeneralSettings::find(1);
                 <div class="col-lg-1  col-md-7 col-sm-6 col-6 order-2 order-sm-3">
                     <div class="appie-btn-box text-right">
                         <div class="toggle-btn ml-30 canvas_open d-lg-none d-block">
-                            <i class="fa fa-bars"></i>
+                            <i style="color: black" class="fa fa-bars"></i>
                         </div>
                     </div>
                 </div>
