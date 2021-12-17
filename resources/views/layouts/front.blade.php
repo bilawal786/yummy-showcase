@@ -52,6 +52,16 @@ $gs = \App\GeneralSettings::find(1);
         .appie-hero-area {
             padding-top: 90px;
         }
+        .appie-hero-content.appie-hero-content-6 ul li a {
+            background: #9b2cfa;
+            border-color: #9b2cfa;
+            display: flex;
+            align-items: center;
+            font-size: 8px;
+            font-weight: 400;
+            padding-top: 0px;
+            padding-bottom: 6px;
+        }
         @media only screen and (max-width: 600px) {
             .desktopview{
                 background-image:url('{{asset($gs->d4)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; height: 100vh; margin-top: 80px;

@@ -3,10 +3,10 @@
 <section class="appie-hero-area appie-hero-7-area desktopview">
     <div class="row" style="background-color: black; ">
         <div class="col-md-4" style="margin-top: 10px !important;">
-            <h2 style="color: white">YUMMY BOX</h2>
+            <h2 style="color: white; font-size: 26px">YUMMY BOX</h2>
         </div>
         <div class="col-md-4" style="margin-top: 10px !important;">
-                <h2 style="color: white">TELECHARGEZ MAINTENANT</h2>
+                <h2 style="color: white; font-size: 26px">TELECHARGEZ MAINTENANT</h2>
         </div>
         <div class="col-md-4">
             <div class="appie-hero-content appie-hero-content-6 appie-hero-content-7" >
