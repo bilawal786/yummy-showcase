@@ -8,7 +8,7 @@
         <div class="col-md-4" style="margin-top: 10px !important;">
                 <h2 style="color: white; font-size: 26px; text-align: center">TELECHARGEZ MAINTENANT</h2>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" style="margin-bottom: 5px">
             <div class="appie-hero-content appie-hero-content-6 appie-hero-content-7" >
                 <ul style="margin-top: 5px !important;">
                     <li><a href="{{$gs->d6}}"><i class="fab fa-apple"></i> <span>Disponible sur <span>App Store</span></span></a></li>
