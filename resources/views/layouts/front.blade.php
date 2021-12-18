@@ -45,6 +45,9 @@ $gs = \App\GeneralSettings::find(1);
             position: relative;
             margin: auto;
         }
+        .w-100{
+            width: 100% !important;
+        }
 
         /* Caption text */
         .text {

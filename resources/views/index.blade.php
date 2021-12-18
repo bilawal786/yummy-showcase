@@ -11,7 +11,7 @@
         <div class="col-md-4">
             <div class="appie-hero-content appie-hero-content-6 appie-hero-content-7" >
                 <ul style="margin-top: 5px !important;">
-                    <li><a href="{{$gs->d6}}"><i class="fab fa-apple"></i> <span>Bientôt disponible sur <span>App Store</span></span></a></li>
+                    <li><a href="{{$gs->d6}}"><i class="fab fa-apple"></i> <span>Disponible sur <span>App Store</span></span></a></li>
                     <li><a class="item-2" href="{{$gs->d5}}"><i class="fab fa-google-play"></i> <span>Disponible sur <span>Google Play</span></span></a></li>
                 </ul>
                 <div class="info">
@@ -25,17 +25,17 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="{{asset($gs->d7??'03.jpeg')}}" style="width:100%">
+                <a class="w-100" href="{{$gs->d10}}"> <img src="{{asset($gs->d7??'03.jpeg')}}" style="width:100%"></a>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="{{asset($gs->d8??'03.jpeg')}}" style="width:100%">
+                <a class="w-100" href="{{$gs->d11}}"> <img src="{{asset($gs->d8??'03.jpeg')}}" style="width:100%"></a>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="{{asset($gs->d9??'03.jpeg')}}" style="width:100%">
+                <a class="w-100" href="{{$gs->d12}}"> <img src="{{asset($gs->d9??'03.jpeg')}}" style="width:100%"></a>
             </div>
 
         </div>

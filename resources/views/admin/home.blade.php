@@ -47,9 +47,18 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">Image du curseur  (1280 * 229)</label>
                                         <input type="file" name="d7" accept="image/*" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Lien</label>
+                                        <input type="text" name="d10" value="{{$gs->d10}}"  class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -60,8 +69,20 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
+                                        <label for="">Lien</label>
+                                        <input type="text" name="d11" value="{{$gs->d11}}"  class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
                                         <label for="">Image du curseur  (1280 * 229)</label>
                                         <input type="file" name="d9" accept="image/*" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Lien</label>
+                                        <input type="text" name="d12" value="{{$gs->d12}}"  class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">

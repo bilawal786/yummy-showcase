@@ -72,6 +72,9 @@ class HomeController extends Controller
         $gs->video = $request->video;
         $gs->d5 = $request->d5;
         $gs->d6 = $request->d6;
+        $gs->d10 = $request->d10;
+        $gs->d11 = $request->d11;
+        $gs->d12 = $request->d12;
         if ($request->hasfile('d1')) {
             $image1 = $request->file('d1');
             $name = time() . 'allimages' . '.' . $image1->getClientOriginalExtension();
