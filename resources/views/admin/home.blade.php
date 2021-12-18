@@ -48,6 +48,24 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
+                                        <label for="">Image du curseur  (1280 * 229)</label>
+                                        <input type="file" name="d7" accept="image/*" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Image du curseur  (1280 * 229)</label>
+                                        <input type="file" name="d8" accept="image/*" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Image du curseur  (1280 * 229)</label>
+                                        <input type="file" name="d9" accept="image/*" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
                                         <label for="">Image d'en-tête mobile</label>
                                         <input type="file" name="d4" accept="image/*" class="form-control">
                                     </div>

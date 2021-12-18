@@ -86,6 +86,27 @@ class HomeController extends Controller
             $image2->move($destinationPath, $name2);
             $gs->d4 = 'allimages/' . $name2;
         }
+        if ($request->hasfile('d7')) {
+            $image3 = $request->file('d7');
+            $name3 = time() . 'allimages' . '.' . $image3->getClientOriginalExtension();
+            $destinationPath = 'allimages/';
+            $image3->move($destinationPath, $name3);
+            $gs->d7 = 'allimages/' . $name3;
+        }
+        if ($request->hasfile('d8')) {
+            $image4 = $request->file('d8');
+            $name4 = time() . 'allimages' . '.' . $image4->getClientOriginalExtension();
+            $destinationPath = 'allimages/';
+            $image4->move($destinationPath, $name4);
+            $gs->d8 = 'allimages/' . $name4;
+        }
+        if ($request->hasfile('d9')) {
+            $image9 = $request->file('d9');
+            $name9 = time() . 'allimages' . '.' . $image9->getClientOriginalExtension();
+            $destinationPath = 'allimages/';
+            $image9->move($destinationPath, $name9);
+            $gs->d9 = 'allimages/' . $name9;
+        }
         $gs->update();
         $notification = array(
             'messege' => 'Sauvegarde réussie!',

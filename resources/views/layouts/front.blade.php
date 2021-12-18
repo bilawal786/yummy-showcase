@@ -39,6 +39,70 @@ $gs = \App\GeneralSettings::find(1);
     <!--====== Style css ======-->
     <link rel="stylesheet" href="{{asset('front/assets/css/style.css')}}">
     <style>
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 2.5s;
+            animation-name: fade;
+            animation-duration: 5.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+        }
         .appie-header-main-menu ul > li .sub-menu {
             min-width: 250px;
             max-width: 200px;
@@ -62,12 +126,26 @@ $gs = \App\GeneralSettings::find(1);
             padding-top: 0px;
             padding-bottom: 6px;
         }
+        .appie-hero-area {
+            padding-top: 100px;
+             padding-bottom: 0px;
+            overflow: hidden;
+            position: relative;
+            z-index: 10;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
         @media only screen and (max-width: 600px) {
             .desktopview{
-                background-image:url('{{asset($gs->d4)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; height: 100vh; margin-top: 80px;
+                background-image:url('{{asset($gs->d4)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; height: 100vh;
             }
             .mar{
                 margin-top: 150px
+            }
+            .appie-hero-content {
+                 margin-bottom: 5px;
+                text-align: center;
             }
         }
     </style>
@@ -78,12 +156,12 @@ $gs = \App\GeneralSettings::find(1);
 
 <!--====== PRELOADER PART START ======-->
 
-<div class="loader-wrap">
-    <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
-    <div class="layer layer-one"><span class="overlay"></span></div>
-    <div class="layer layer-two"><span class="overlay"></span></div>
-    <div class="layer layer-three"><span class="overlay"></span></div>
-</div>
+{{--<div class="loader-wrap">--}}
+{{--    <div class="preloader"><div class="preloader-close">Preloader Close</div></div>--}}
+{{--    <div class="layer layer-one"><span class="overlay"></span></div>--}}
+{{--    <div class="layer layer-two"><span class="overlay"></span></div>--}}
+{{--    <div class="layer layer-three"><span class="overlay"></span></div>--}}
+{{--</div>--}}
 
 <!--====== PRELOADER PART ENDS ======-->
 
@@ -293,7 +371,27 @@ $gs = \App\GeneralSettings::find(1);
 
 <!--====== Main js ======-->
 <script src="{{asset('front/assets/js/main.js')}}"></script>
+<script>
+    var slideIndex = 0;
+    showSlides();
 
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+</script>
 </body>
 
 </html>

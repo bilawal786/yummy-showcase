@@ -1,12 +1,12 @@
 @extends('layouts.front')
 @section('content')
-<section class="appie-hero-area appie-hero-7-area desktopview">
+<section class="appie-hero-area appie-hero-7-area" style="background-color: #fed53d">
     <div class="row" style="background-color: black; ">
         <div class="col-md-4" style="margin-top: 10px !important;">
-            <h2 style="color: white; font-size: 26px">YUMMY BOX</h2>
+            <h2 style="color: white; font-size: 26px; text-align: center">YUMMY BOX</h2>
         </div>
         <div class="col-md-4" style="margin-top: 10px !important;">
-                <h2 style="color: white; font-size: 26px">TELECHARGEZ MAINTENANT</h2>
+                <h2 style="color: white; font-size: 26px; text-align: center">TELECHARGEZ MAINTENANT</h2>
         </div>
         <div class="col-md-4">
             <div class="appie-hero-content appie-hero-content-6 appie-hero-content-7" >
@@ -20,25 +20,34 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-2">
+    <div>
+        <div class="slideshow-container">
 
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="{{asset($gs->d7??'03.jpeg')}}" style="width:100%">
             </div>
-            <div class="col-lg-8 mar">
-                <div class="appie-hero-content appie-hero-content-6 appie-hero-content-7">
-<!--                    <ul>
-                        <li><a href="{{$gs->d6}}"><i class="fab fa-apple"></i> <span>Bientôt disponible sur <span>App Store</span></span></a></li>
-                        <li><a class="item-2" href="{{$gs->d5}}"><i class="fab fa-google-play"></i> <span>Disponible sur <span>Google Play</span></span></a></li>
-                    </ul>
-                    <div class="info">
 
-                    </div>-->
-                </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="{{asset($gs->d8??'03.jpeg')}}" style="width:100%">
             </div>
-            <div class="col-lg-2">
 
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="{{asset($gs->d9??'03.jpeg')}}" style="width:100%">
             </div>
+
+        </div>
+
+        <div style="text-align:center; display: none">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <div class="desktopview">
+
         </div>
     </div>
 </section>
