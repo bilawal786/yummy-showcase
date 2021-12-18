@@ -196,17 +196,17 @@ $gs = \App\GeneralSettings::find(1);
                             <li class="menu-item-has-children active">
                                 <a href="{{route('front.advantage')}}">Avantage</a>
                                 <ul class="sub-menu">
-                                    <li><a href="">Parrainage </a></li>
-                                    <li><a href="">Ambassadeur </a></li>
-                                    <li><a href="">Yummy coin </a></li>
+                                    <li><a href="{{route('front.parrainage')}}">Parrainage </a></li>
+                                    <li><a href="{{route('front.ambass')}}">Ambassadeur </a></li>
+                                    <li><a href="{{route('front.coin')}}">Yummy coin </a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children active">
                                 <a href="#">Mouvement</a>
                                 <ul class="sub-menu">
-                                    <li><a href="{{route('front.parrainage')}}">Parrainage </a></li>
-                                    <li><a href="{{route('front.ambass')}}">Ambassadeur </a></li>
-                                    <li><a href="{{route('front.coin')}}">Yummy coin </a></li>
+                                    <li><a href="{{route('front.blog')}}">Blog</a></li>
+                                    <li><a href="{{route('front.ambition')}}">Nos ambitions</a></li>
+                                    <li><a href="{{route('front.objective')}}">Nos objectifs </a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children active"><a href="{{route('front.contact')}}">Contact</a></li>
@@ -259,7 +259,7 @@ $gs = \App\GeneralSettings::find(1);
                             <li>
                                 <a href="#">Mouvement <i class="fal fa-angle-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li><a href="{{route('front.blog')}}">Blogs</a></li>
+                                    <li><a href="{{route('front.blog')}}">Blog</a></li>
                                     <li><a href="{{route('front.ambition')}}">Nos ambitions</a></li>
                                     <li><a href="{{route('front.objective')}}">Nos objectifs </a></li>
                                 </ul>
