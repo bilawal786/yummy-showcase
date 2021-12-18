@@ -60,6 +60,10 @@ class HomeController extends Controller
         $gs = GeneralSettings::find(1);
         return view('admin.terms', compact('gs'));
     }
+    public function pages(){
+        $gs = GeneralSettings::find(1);
+        return view('admin.pages', compact('gs'));
+    }
     public function blog(){
         $blogs = Blog::all();
         return view('admin.blog.index', compact('blogs'));
@@ -229,6 +233,18 @@ class HomeController extends Controller
         $notification = array(
             'messege' => 'Supprimé avec succès',
             'alert-type' => 'error'
+        );
+        return redirect()->back()->with($notification);
+    }
+    public function pagesStore(Request $request){
+        $gs = GeneralSettings::find(1);
+        $gs->d13 = $request->d13;
+        $gs->d14 = $request->d14;
+        $gs->d15 = $request->d15;
+        $gs->update();
+        $notification = array(
+            'messege' => 'Sauvegarde réussie!',
+            'alert-type' => 'success'
         );
         return redirect()->back()->with($notification);
     }

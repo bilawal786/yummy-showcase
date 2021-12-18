@@ -105,6 +105,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item menu-open">
+            <a href="{{route('admin.pages')}}" class="nav-link {{  request()->is('admin/pages') ? 'active':'' }}">
+                <i class="nav-icon fas fa-ellipsis-h"></i>
+              <p>
+                  Pages
+              </p>
+            </a>
+          </li>
 
            <li class="nav-item">
             <a href="{{route('logout')}}" onclick="event.preventDefault();

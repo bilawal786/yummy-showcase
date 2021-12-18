@@ -28,6 +28,18 @@ class FrontendController extends Controller
         $gs  = \App\GeneralSettings::find(1);
         return view('objective', compact('gs'));
     }
+    public function parrainage(){
+        $gs  = \App\GeneralSettings::find(1);
+        return view('parrainage', compact('gs'));
+    }
+    public function ambass(){
+        $gs  = \App\GeneralSettings::find(1);
+        return view('ambass', compact('gs'));
+    }
+    public function coin(){
+        $gs  = \App\GeneralSettings::find(1);
+        return view('coin', compact('gs'));
+    }
     public function comm(){
         return view('comm');
     }

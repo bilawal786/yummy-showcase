@@ -19,6 +19,9 @@ Route::get('/terms', 'FrontendController@terms')->name('front.terms');
 Route::get('/privacy', 'FrontendController@privacy')->name('front.policy');
 Route::get('/advantage', 'FrontendController@advantage')->name('front.advantage');
 Route::get('/contact', 'FrontendController@contact')->name('front.contact');
+Route::get('/parrainage', 'FrontendController@parrainage')->name('front.parrainage');
+Route::get('/ambass', 'FrontendController@ambass')->name('front.ambass');
+Route::get('/coin', 'FrontendController@coin')->name('front.coin');
 Route::get('/front/blog', 'FrontendController@blog')->name('front.blog');
 Route::get('/single/post/{id}', 'FrontendController@singlePost')->name('single.post');
 Route::get('/ambition', 'FrontendController@ambition')->name('front.ambition');
@@ -29,6 +32,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin/blog', 'HomeController@blog')->name('admin.blog');
+Route::get('/admin/pages', 'HomeController@pages')->name('admin.pages');
 Route::get('/admin/privacy', 'HomeController@privacy')->name('admin.privacy');
 Route::get('/admin/terms', 'HomeController@terms')->name('admin.terms');
 Route::get('/admin/blog/delete/{id}', 'HomeController@blogdelete')->name('blog.delete');
@@ -47,3 +51,4 @@ Route::post('/objectifs/store', 'HomeController@objectifsStore')->name('objectif
 Route::post('/blog/store', 'HomeController@blogStore')->name('blog.store');
 Route::post('/terms/store', 'HomeController@termsStore')->name('terms.store');
 Route::post('/privacy/store', 'HomeController@privacyStore')->name('privacy.store');
+Route::post('/pages/store', 'HomeController@pagesStore')->name('pages.store');
