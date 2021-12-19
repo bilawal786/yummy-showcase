@@ -124,6 +124,13 @@ class HomeController extends Controller
     public function ambitionsStore(Request $request){
         $gs = GeneralSettings::find(1);
         $gs->d2 = $request->d2;
+        if ($request->hasfile('d20')) {
+            $image1 = $request->file('d20');
+            $name = time() . 'allimages' . '.' . $image1->getClientOriginalExtension();
+            $destinationPath = 'allimages/';
+            $image1->move($destinationPath, $name);
+            $gs->d20 = 'allimages/' . $name;
+        }
         $gs->update();
         $notification = array(
             'messege' => 'Sauvegarde réussie!',
@@ -154,6 +161,13 @@ class HomeController extends Controller
     public function objectifsStore(Request $request){
         $gs = GeneralSettings::find(1);
         $gs->d3 = $request->d3;
+        if ($request->hasfile('d19')) {
+            $image1 = $request->file('d19');
+            $name = time() . 'allimages' . '.' . $image1->getClientOriginalExtension();
+            $destinationPath = 'allimages/';
+            $image1->move($destinationPath, $name);
+            $gs->d19 = 'allimages/' . $name;
+        }
         $gs->update();
         $notification = array(
             'messege' => 'Sauvegarde réussie!',
@@ -241,6 +255,27 @@ class HomeController extends Controller
         $gs->d13 = $request->d13;
         $gs->d14 = $request->d14;
         $gs->d15 = $request->d15;
+        if ($request->hasfile('d16')) {
+            $image1 = $request->file('d16');
+            $name = time() . 'allimages' . '.' . $image1->getClientOriginalExtension();
+            $destinationPath = 'allimages/';
+            $image1->move($destinationPath, $name);
+            $gs->d16 = 'allimages/' . $name;
+        }
+        if ($request->hasfile('d17')) {
+            $image2 = $request->file('d17');
+            $name2 = time() . 'allimages' . '.' . $image2->getClientOriginalExtension();
+            $destinationPath = 'allimages/';
+            $image2->move($destinationPath, $name2);
+            $gs->d17 = 'allimages/' . $name2;
+        }
+        if ($request->hasfile('d18')) {
+            $image3 = $request->file('d18');
+            $name3 = time() . 'allimages' . '.' . $image3->getClientOriginalExtension();
+            $destinationPath = 'allimages/';
+            $image3->move($destinationPath, $name3);
+            $gs->d18 = 'allimages/' . $name3;
+        }
         $gs->update();
         $notification = array(
             'messege' => 'Sauvegarde réussie!',

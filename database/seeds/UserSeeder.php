@@ -39,6 +39,12 @@ class UserSeeder extends Seeder
             'd4' => '02.jpg',
             'd5' => 'https://play.google.com/store/apps/details?id=com.yummy.box',
             'd6' => 'https://apps.apple.com/fr/app/yummy-box-app/id1595563767',
+            'd16' => '01.jpg',
+            'd17' => '01.jpg',
+            'd18' => '01.jpg',
+            'd19' => '01.jpg',
+            'd20' => '01.jpg',
+
         ]);
     }
 }

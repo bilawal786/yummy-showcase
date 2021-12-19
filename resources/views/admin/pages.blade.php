@@ -42,14 +42,34 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
+                                        <label for="">Imgae</label>
+                                        <input type="file" class="form-control" name="d16">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
                                         <label for="">Parrainage</label>
                                         <textarea class="form-control" name="d13" id="summernote" cols="30" rows="10" required>{{$gs->d13}}</textarea>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="">Imgae</label>
+                                        <input type="file" class="form-control" name="d17">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="">Ambassadeur</label>
                                         <textarea class="form-control" name="d14" id="summernote1" cols="30" rows="10" required>{{$gs->d14}}</textarea>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="">Imgae</label>
+                                        <input type="file" class="form-control" name="d18">
                                     </div>
                                 </div>
                                 <div class="col-md-12">

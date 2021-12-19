@@ -22,6 +22,7 @@ Route::get('/contact', 'FrontendController@contact')->name('front.contact');
 Route::get('/parrainage', 'FrontendController@parrainage')->name('front.parrainage');
 Route::get('/ambass', 'FrontendController@ambass')->name('front.ambass');
 Route::get('/coin', 'FrontendController@coin')->name('front.coin');
+Route::get('/mouv', 'FrontendController@mouv')->name('front.mouv');
 Route::get('/front/blog', 'FrontendController@blog')->name('front.blog');
 Route::get('/single/post/{id}', 'FrontendController@singlePost')->name('single.post');
 Route::get('/ambition', 'FrontendController@ambition')->name('front.ambition');

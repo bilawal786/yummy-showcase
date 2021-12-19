@@ -72,7 +72,7 @@
                     <label for="subject">Message</label>
                     <textarea id="subject" required name="message" placeholder="Message.." style="height:200px"></textarea>
 
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Envoyer">
                 </form>
             </div>
         </div>

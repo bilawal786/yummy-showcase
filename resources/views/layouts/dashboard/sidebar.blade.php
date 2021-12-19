@@ -57,38 +57,47 @@
               </p>
             </a>
           </li>
-          <li class="nav-item menu-open">
+            <li class="nav-item {{  request()->is('admin/*') ? 'menu-open':'' }}">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-ellipsis-h"></i>
+                    <p>
+                        Avantage
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="{{route('admin.ambitions')}}" class="nav-link {{  request()->is('admin/ambitions') ? 'active':'' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Ambitions</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('admin.objectifs')}}" class="nav-link {{  request()->is('admin/objectifs') ? 'active':'' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>
+                                Objectifs
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('admin.blog')}}" class="nav-link {{  request()->is('admin/blog') ? 'active':'' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>
+                                Blog
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+<!--          <li class="nav-item menu-open">
             <a href="{{route('admin.advantage')}}" class="nav-link {{  request()->is('admin/advantage') ? 'active':'' }}">
                 <i class="nav-icon fas fa-ellipsis-h"></i>
               <p>
-                  Avantage
+
               </p>
             </a>
-          </li>
-          <li class="nav-item menu-open">
-            <a href="{{route('admin.ambitions')}}" class="nav-link {{  request()->is('admin/ambitions') ? 'active':'' }}">
-                <i class="nav-icon fas fa-ellipsis-h"></i>
-              <p>
-                  Ambitions
-              </p>
-            </a>
-          </li>
-          <li class="nav-item menu-open">
-            <a href="{{route('admin.objectifs')}}" class="nav-link {{  request()->is('admin/objectifs') ? 'active':'' }}">
-                <i class="nav-icon fas fa-ellipsis-h"></i>
-              <p>
-                  Objectifs
-              </p>
-            </a>
-          </li>
-          <li class="nav-item menu-open">
-            <a href="{{route('admin.blog')}}" class="nav-link {{  request()->is('admin/blog') ? 'active':'' }}">
-                <i class="nav-icon fas fa-ellipsis-h"></i>
-              <p>
-                  Blog
-              </p>
-            </a>
-          </li>
+          </li>-->
           <li class="nav-item menu-open">
             <a href="{{route('admin.privacy')}}" class="nav-link {{  request()->is('admin/privacy') ? 'active':'' }}">
                 <i class="nav-icon fas fa-ellipsis-h"></i>
@@ -109,7 +118,7 @@
             <a href="{{route('admin.pages')}}" class="nav-link {{  request()->is('admin/pages') ? 'active':'' }}">
                 <i class="nav-icon fas fa-ellipsis-h"></i>
               <p>
-                  Pages
+                  Mouvement
               </p>
             </a>
           </li>

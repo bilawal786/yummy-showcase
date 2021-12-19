@@ -42,6 +42,12 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
+                                        <label for="">Imgae</label>
+                                        <input type="file" class="form-control" name="d19">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
                                         <label for="">La description</label>
                                         <textarea class="form-control" name="d3" id="summernote" cols="30" rows="10" required>{{$gs->d3}}</textarea>
                                     </div>

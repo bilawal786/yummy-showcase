@@ -40,6 +40,10 @@ class FrontendController extends Controller
         $gs  = \App\GeneralSettings::find(1);
         return view('coin', compact('gs'));
     }
+    public function mouv(){
+        $gs  = \App\GeneralSettings::find(1);
+        return view('mouv', compact('gs'));
+    }
     public function comm(){
         return view('comm');
     }
