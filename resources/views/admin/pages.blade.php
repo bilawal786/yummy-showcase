@@ -42,7 +42,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="">Imgae</label>
+                                        <label for="">Image</label>
                                         <input type="file" class="form-control" name="d16">
                                     </div>
                                 </div>
@@ -55,7 +55,7 @@
                                 <hr>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="">Imgae</label>
+                                        <label for="">Image</label>
                                         <input type="file" class="form-control" name="d17">
                                     </div>
                                 </div>
@@ -68,7 +68,7 @@
                                 <hr>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="">Imgae</label>
+                                        <label for="">Image</label>
                                         <input type="file" class="form-control" name="d18">
                                     </div>
                                 </div>

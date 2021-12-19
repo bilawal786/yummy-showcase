@@ -39,7 +39,9 @@ $gs = \App\GeneralSettings::find(1);
     <!--====== Style css ======-->
     <link rel="stylesheet" href="{{asset('front/assets/css/style.css')}}">
     <style>
-
+        .appie-project-3-box {
+            padding: 60px 270px;
+        }
         /* Slideshow container */
         .slideshow-container {
             position: relative;

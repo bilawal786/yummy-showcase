@@ -42,7 +42,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="">Imgae</label>
+                                        <label for="">Image</label>
                                         <input type="file" class="form-control" name="d20">
                                     </div>
                                 </div>
