@@ -131,9 +131,9 @@
                 <div class="appie-project-3-box d-block d-md-flex justify-content-between align-items-center">
                     <h4 class="title">Je suis un</h4>
                     <ul>
-                        <li><a href="commercant.html">Commerçant</a></li>
+                        <li><a href="{{route('front.comm')}}">Commerçant</a></li>
 
-                        <li><a class="item-2" href="#">&nbsp;&nbsp;Particulier&nbsp;&nbsp;</a></li>
+                        <li><a class="item-2" href="{{route('front.index')}}">&nbsp;&nbsp;Particulier&nbsp;&nbsp;</a></li>
                     </ul>
                 </div>
             </div>
