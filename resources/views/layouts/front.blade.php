@@ -630,13 +630,13 @@ $gs = \App\GeneralSettings::find(1);
 
                         <ul  class="offcanvas_main_menu">
                             <li class="menu-item-has-children active">
-                                <a href="{{route('front.index')}}">Particulier</a>
+                                <a href="{{route('front.index')}}">Particuliers</a>
                             </li>
                             <li class="menu-item-has-children active">
                                 <a href="{{route('front.comm')}}">Commerçants</a>
                             </li>
                             <li class="menu-item-has-children active">
-                                <a href="#">Avantage</a>
+                                <a href="#">Avantages</a>
                                 <ul class="sub-menu">
                                     <li><a href="{{route('front.parrainage')}}">Parrainage </a></li>
                                     <li><a href="{{route('front.ambass')}}">Ambassadeur </a></li>
@@ -685,13 +685,13 @@ $gs = \App\GeneralSettings::find(1);
                     <div class="appie-header-main-menu">
                         <ul>
                             <li>
-                                <a href="{{route('front.index')}}">Particulier</a>
+                                <a href="{{route('front.index')}}">Particuliers</a>
                             </li>
                             <li>
                                 <a href="{{route('front.comm')}}">Commerçants</a>
                             </li>
                             <li>
-                                <a href="#">Avantage <i class="fal fa-angle-down"></i></a>
+                                <a href="#">Avantages <i class="fal fa-angle-down"></i></a>
                                 <ul class="sub-menu">
                                     <li><a href="{{route('front.parrainage')}}">Parrainage </a></li>
                                     <li><a href="{{route('front.ambass')}}">Ambassadeur </a></li>
