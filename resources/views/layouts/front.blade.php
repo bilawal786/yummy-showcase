@@ -545,6 +545,11 @@ $gs = \App\GeneralSettings::find(1);
             margin-bottom: -4px;
         }
         /*end whatsap popup css*/
+        @media only screen and (max-width: 600px) {
+            .appie-project-3-box {
+                 padding: 60px 0px;
+            }
+        }
 
     </style>
 

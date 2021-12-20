@@ -61,7 +61,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6">
-                <div class="appie-single-service text-center mt-30 wow animated fadeInUp animated" data-wow-duration="2000ms" data-wow-delay="200ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                <div class="appie-single-service text-center mt-30">
                     <div class="icon">
                         <i class="fas fa-mobile-alt"></i>
                         <span>1</span>
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="appie-single-service text-center mt-30 item-2 wow animated fadeInUp animated" data-wow-duration="2000ms" data-wow-delay="400ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                <div class="appie-single-service text-center mt-30 item-2">
                     <div class="icon">
                         <i class="fas fa-shopping-cart"></i>
                         <span>2</span>
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="appie-single-service text-center mt-30 item-3 wow animated fadeInUp animated" data-wow-duration="2000ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                <div class="appie-single-service text-center mt-30 item-3">
                     <div class="icon">
                         <i class="fas fa-credit-card"></i>
                         <span>3</span>
@@ -91,7 +91,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="appie-single-service text-center mt-30 item-4 wow animated fadeInUp animated" data-wow-duration="2000ms" data-wow-delay="800ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 800ms; animation-name: fadeInUp;">
+                <div class="appie-single-service text-center mt-30 item-4">
                     <div class="icon">
                         <i class="fas fa-shopping-bag"></i>
                         <span>4</span>
@@ -128,7 +128,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="appie-project-3-box d-block d-md-flex justify-content-between align-items-center wow animated fadeInUp" data-wow-duration="2000ms" data-wow-delay="400ms">
+                <div class="appie-project-3-box d-block d-md-flex justify-content-between align-items-center">
                     <h4 class="title">Je suis un</h4>
                     <ul>
                         <li><a href="commercant.html">Commerçant</a></li>
