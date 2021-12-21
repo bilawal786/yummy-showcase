@@ -556,6 +556,13 @@ $gs = \App\GeneralSettings::find(1);
             display: flex;
             align-items: center;
         }
+        .appie-project-3-box a {
+            background: #fff;
+            color: #0e1133;
+            border-color: #fff;
+            line-height: 55px;
+            padding: 0 35px;
+        }
     </style>
 
 </head>
