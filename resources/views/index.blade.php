@@ -133,7 +133,7 @@
                     <ul>
                         <li><a href="{{route('front.comm')}}">Commerçant</a></li>
 
-                        <li><a class="item-2" href="{{route('front.index')}}">&nbsp;&nbsp;Particulier&nbsp;&nbsp;</a></li>
+                        <li><a class="item-2" href="{{route('front.ambass')}}">&nbsp;&nbsp;Ambassadeur&nbsp;&nbsp;</a></li>
                     </ul>
                 </div>
             </div>
