@@ -550,7 +550,12 @@ $gs = \App\GeneralSettings::find(1);
                  padding: 60px 0px;
             }
         }
-
+        .appie-page-title-area {
+            height: 250px;
+            background-color: #f78169;
+            display: flex;
+            align-items: center;
+        }
     </style>
 
 </head>
@@ -648,7 +653,7 @@ $gs = \App\GeneralSettings::find(1);
                                 <ul class="sub-menu">
                                     <li><a href="{{route('front.blog')}}">Blog</a></li>
                                     <li><a href="{{route('front.ambition')}}">Nos ambitions</a></li>
-                                    <li><a href="{{route('front.objective')}}">Nos objectifs </a></li>
+{{--                                    <li><a href="{{route('front.objective')}}">Nos objectifs </a></li>--}}
                                 </ul>
                             </li>
                             <li class="menu-item-has-children active"><a href="{{route('front.contact')}}">Contact</a></li>
@@ -703,7 +708,7 @@ $gs = \App\GeneralSettings::find(1);
                                 <ul class="sub-menu">
                                     <li><a href="{{route('front.blog')}}">Blog</a></li>
                                     <li><a href="{{route('front.ambition')}}">Nos ambitions</a></li>
-                                    <li><a href="{{route('front.objective')}}">Nos objectifs </a></li>
+{{--                                    <li><a href="{{route('front.objective')}}">Nos objectifs </a></li>--}}
                                 </ul>
                             </li>
                             <li><a href="{{route('front.contact')}}">Contact</a></li>

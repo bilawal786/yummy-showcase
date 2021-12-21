@@ -23,17 +23,17 @@
     <div>
         <div class="slideshow-container">
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">1 / 3</div>
                 <a class="w-100" href="{{$gs->d10}}"> <img src="{{asset($gs->d7??'03.jpeg')}}" style="width:100%"></a>
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">2 / 3</div>
                 <a class="w-100" href="{{$gs->d11}}"> <img src="{{asset($gs->d8??'03.jpeg')}}" style="width:100%"></a>
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">3 / 3</div>
                 <a class="w-100" href="{{$gs->d12}}"> <img src="{{asset($gs->d9??'03.jpeg')}}" style="width:100%"></a>
             </div>
