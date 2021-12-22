@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="appie-page-title-item">
-                        <h3 class="title">MENTIONS LÉGALES</h3>
+                        <h3 class="title">Politique de confidentialité</h3>
                     </div>
                 </div>
             </div>
