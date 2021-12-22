@@ -147,12 +147,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="appie-project-3-box d-block d-md-flex justify-content-between align-items-center wow animated fadeInUp" data-wow-duration="2000ms" data-wow-delay="400ms">
+                <div class="appie-project-3-box d-block d-md-flex justify-content-between align-items-center">
                     <h4 class="title">Je suis un</h4>
                     <ul>
-                        <li><a href="commercant.html">Commerçant</a></li>
+                        <li><a href="{{route('front.comm')}}">Commerçant</a></li>
 
-                        <li><a class="item-2" href="#">&nbsp;&nbsp;Particulier&nbsp;&nbsp;</a></li>
+                        <li><a class="item-2" href="{{route('front.ambass')}}">&nbsp;&nbsp;Ambassadeur&nbsp;&nbsp;</a></li>
                     </ul>
                 </div>
             </div>
