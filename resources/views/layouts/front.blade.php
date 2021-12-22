@@ -758,18 +758,18 @@ $gs = \App\GeneralSettings::find(1);
                     <h4 class="title">Plan du site</h4>
                     <ul>
                         <li><a href="{{route('front.index')}}">Particuliers</a></li>
-                        <li><a href="{{route('front.comm')}}">Commerçant</a></li>
-                        <li><a href="{{route('front.advantage')}}">Avantage</a></li>
+                        <li><a href="{{route('front.comm')}}">Commerçants</a></li>
+                        <li><a href="{{route('front.advantage')}}">Avantages</a></li>
                         <li><a href="{{route('front.contact')}}">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="footer-navigation footer-navigation-3">
-                    <h4 class="title">INFOS LÉGALES</h4>
+                    <h4 class="title">Mentions Légales</h4>
                     <ul>
                         <li><a href="{{route('front.terms')}}">CONDITIONS GÉNÉRALES D'UTILISATION</a></li>
-                        <li><a href="{{route('front.policy')}}">MENTIONS LÉGALES</a></li>
+                        <li><a href="{{route('front.policy')}}">POLITIQUE DE CONFIDENTIALITÉ</a></li>
                     </ul>
                 </div>
             </div>
